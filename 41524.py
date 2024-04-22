@@ -6,6 +6,8 @@ st.title('British Airways Rating by Travel Class')
 
 BA_AirlineReviews = pd.read_csv('BA_AirlineReviews.csv')
 
+st.datafram(BA_AirlineReviews)
+
 BA_AirlineReviews_filtered = BA_AirlineReviews.dropna(subset=['SeatType'])
 BA_AirlineReviews_filtered = BA_AirlineReviews_filtered[BA_AirlineReviews_filtered['SeatType'] != 'NONE']
 
